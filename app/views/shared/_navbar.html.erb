@@ -1,0 +1,18 @@
+<nav class="sticky top-0">
+  <div class="pl-3 pr-6 py-5 bg-secondary-light flex justify-between">
+    <%= image_tag "logo.png", class: "h-10" %>
+    <div>
+      <div class="px-4 cursor-pointer lg:hidden" id="burger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </div>
+      <ul id="menu" class="text-base hidden md:flex md:flex-row gap-4">
+        <li><%= link_to "主页", root_path, class: "badge" %></li>
+        <li><%= link_to "编辑", "#", class: "badge" %></li>
+        <li><%= link_to "登录", "#", class: "badge" %></li>
+        <li><%= link_to "注册", "#", class: "badge" %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
